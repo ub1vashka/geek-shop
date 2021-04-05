@@ -7,6 +7,10 @@
     --dark-grey-color: #5D5D5D;
     --black-grey-color: #222224;
     --grey-dull-color: #9F9F9F;
+    --input-color: #E1E1E1;
+    --registration-color: #F8F3F4;
+
+
 
 }
 
@@ -57,8 +61,6 @@ body {
     margin: 0 0 63px;
 }
 
-.brand__img {
-}
 
 .brand__title-container {
     background-color: var(--pink-color);
@@ -74,6 +76,7 @@ body {
     line-height: 58px;
     text-transform: uppercase;
     width: 377px;
+    position: relative;
 }
 
 .brand__sub-title {
@@ -87,10 +90,6 @@ body {
     color: var(--dark-pink-color);
 }
 
-.brand__title-container:before {
-
-}
-
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -101,7 +100,6 @@ body {
     border: 0;
     clip: rect(0 0 0 0)
 }
-
 
 .promotions__list {
     display: flex;
@@ -237,7 +235,13 @@ body {
     user-select: none; 
     background-color: white;
     padding: 14px 38px;
-    outline: none; 
+    outline: 1px solid; 
+    border: none;
+}
+
+.catalog:hover{ 
+    background-color: var(--dark-pink-color);
+    color: var(--white-color)
 }
 
 .services_container {
@@ -292,7 +296,7 @@ body {
 
 .footer__container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     background-image: url("../img/Layer\ 41.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -307,7 +311,7 @@ body {
 }
 
 .quote__img {
-    margin: 0 0 30px;
+    margin: 86px 0 30px 225px;
 }
 
 .quote__text {
@@ -316,19 +320,23 @@ body {
     font-style: italic;
     font-weight: 400;
     line-height: 24px;
+    margin: 0 0 0 230px;
 }
 
 .footer__container__email {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 491px 0 0;
 }
 
 .email__title {
-    width: 557px;
     font-size: 24px;
     font-weight: 700;
     line-height: 38px;
     text-align: center;
     text-transform: uppercase;
+
 }
 
 .email__sub-title {
@@ -337,6 +345,31 @@ body {
     font-weight: 400;
     line-height: 30px;
     text-transform: uppercase;
+}
+
+.email__description {
+    background-color: var(--input-color);
+    border-radius: 30px 0 0 30px;
+    height: 49px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;  
+    padding: 0 25px 0 25px;
+    border: none;
+}
+
+.email__button {
+    background-color: var(--dark-pink-color);
+    color: var(--grey-color);
+    border: none;
+    padding: 16px 8px 16px 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+    border-radius: 0 30px 30px 0;
 }
 
 .social__container__color {
@@ -375,5 +408,64 @@ body {
 
 }
 
-/* a.knopka:hover { background: rgb(232,95,76); } при наведении курсора мышки */
-/* a.knopka:active { background: rgb(152,15,0); } при нажатии */
+.img_imstagram {
+    padding: 8px 0 0 9px;
+}
+
+.social__item:hover {
+    background-color: var(--dark-pink-color);
+}
+
+.header__link__opacity:hover,
+.header__link__opacity:focus {
+    opacity: 0.7;
+}
+
+.header__button-icon, 
+.header__persom,
+.header__cart
+{
+    fill: var(--white-color);
+}
+
+.header__button:hover,
+.header__link__opacity:hover{
+    fill: var(--dark-pink-color);
+}
+
+
+.brand__title::before {
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 92px;
+    background: var(--dark-pink-color);
+    left: -25px;
+}
+
+
+
+/* Registration */
+
+    .registratiom__title__container {
+        background-color: var(--registration-color);
+}
+
+.registration__title {
+    padding: 59px 0 60px;
+    color:#F16D7F;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+}
+
+.registration__main {
+    display: flex;
+}
+
+.registration__placeholders {
+    display: flex;
+    flex-direction: column;
+}
+
