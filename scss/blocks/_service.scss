@@ -1,0 +1,48 @@
+.services {
+    background-color: $black-grey-color;
+    min-height: 341px;
+    width: 100%;
+    &_container {
+        align-items: center;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        padding: 103px 0 0 30px;
+    }
+    
+    &__item {
+        width: 360px;
+        text-align: center;
+        
+    }
+    
+    &__car {
+        margin: 0 0 28px 0;
+    }
+    
+    &__percent {
+        margin: 0 0 19px 0;
+    }
+    
+    &__crown {
+        margin: 0 0 25px 0;
+        background-color: transparent;
+    }
+    
+    &__title {
+        color: $grey-color;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        margin: 0 0 16px;
+    }
+    
+    &__text {
+        color: $grey-color;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 17px;
+        padding: 0 0 104px;
+    }
+}

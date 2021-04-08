@@ -1,0 +1,123 @@
+.registration {
+    margin: 0 0 113px 0;
+
+    &__title__container {
+        background-color: $registration-color;
+        margin: 0 0 64px 0;
+    }
+    
+    &__title {
+        padding: 59px 0 60px;
+        color:#F16D7F;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+    }
+    
+    
+    &__main {
+        display: flex;
+    
+    }
+    
+    &__placeholders {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__placeholder-title {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+        margin: 0 0 20px 0;
+    }
+    
+    &__placeholder__item {
+        width: 360px;
+        height: 45px;
+        margin: 0 128px 20px 0;
+        border: none;
+        outline: 2px solid; 
+        outline-color: $outline-color;
+        padding: 0 0 0 16px;
+        color: #B1B1B1;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 16px;
+    }
+    
+    &__gender {
+        display: flex;
+        margin: 31px 0 33px 0;
+        font-size: 11px;
+        font-weight: 300;
+        line-height: 13px;
+    }
+    
+    &__gender__title{
+        margin: 0 20px 0 10px;
+    } 
+    
+    &__placeholder__rules {
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 16px;
+        color: #B1B1B1;
+        width: 359px;
+        margin: 0 0 39px 0;
+    }
+    
+    &__button {
+        background-color: $dark-pink-color;
+        color: $grey-color;
+        border: none;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        text-decoration: none;
+        display:inline-block;
+        margin: 27px 0 0 0;
+        width: 167px;
+        height: 50px;
+        text-transform: uppercase;
+    }
+        
+    &__sub-title {
+        font-size: 23px;
+        font-weight: 300;
+        line-height: 29px;
+    }
+    
+    &__loyalty__title {
+        margin: 0 0 22px;
+        text-transform: uppercase;
+    }
+    
+    &__loyalty__sub-title {
+        margin: 0 0 21px;
+    }
+    
+    &__loyalty__item {
+        margin: 0 0 16px;
+        padding: 0 0 0 40px;
+        &::before {
+            content: url(../img/Vector.svg);
+            position: absolute;
+            left: 3px;
+        }
+    }
+    
+    &__arrow {
+        margin: 0 0 0 20px;
+    }
+    
+    &__loyalty__list {
+        position: relative;
+        margin: 0 0 0;
+    }
+    
+    
+
+}
+
