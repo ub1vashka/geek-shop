@@ -1,0 +1,99 @@
+.cart {
+    margin: 0 0 113px 0;
+
+    &__container {
+        display: flex;
+    }
+
+    &__title {
+        padding: 59px 0 60px;
+        color: #F16D7F;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+    }
+
+    &__title__container {
+        background-color: $registration-color;
+        margin: 0 0 96px 0;
+    }
+
+    &__item {
+        display: flex;
+        width: 652px;
+        height: 306px;
+        margin: 0 128px 40px 0;
+        box-shadow: 0 10px 10px 0 rgba(0,0,0,0.5); /* Параметры тени */
+        padding: 10px;
+    }
+
+    &__item__sub-title{
+        margin: 22px 0 42px 31px;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        width: 262px;
+        text-transform: uppercase;
+    }
+
+    &__item__title {
+        margin: 0 0 6px 31px;
+        font-family: Lato;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+    &__sub-item__price {
+        color: $dark-pink-color;
+    }
+
+    &__adrees__title {
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+        text-transform: uppercase;
+        margin: 0 0 20px;
+    }
+
+    &__adrees__form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__adrees__placeholder{
+        width: 360px;
+        height: 45px;
+        margin: 0 128px 20px 0;
+        border: none;
+        outline: 2px solid;
+        outline-color: $outline-color;
+        padding: 0 0 0 16px;
+        color: #B1B1B1;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 16px;
+    }
+
+    &__adrees__buttom {
+        margin: 24px 0 58px 70px;
+        transform: translate(-50%, 0);
+        color: $outline-color;
+        border-color: $outline-color;
+        text-decoration: none;
+        user-select: none;
+        background-color: white;
+        padding: 14px 25px;
+        outline: 1px solid;
+        border: none;
+        text-transform: uppercase;
+
+        &:hover {
+            color: $dark-pink-color;
+            border-color: $dark-pink-color;
+        }
+    }
+
+}

@@ -4,42 +4,41 @@
     &__navigation {
         display: none;
     }
-    
+
     &__container {
         display: flex;
         justify-content: space-between;
         min-height: 75px;
         align-items: center;
     }
-    
+
     &__logo {
         margin: 0 41px 0 0;
     }
-    
+
     &__button {
         background-color: transparent;
         border: none;
         margin: 0 33px 0 0;
     }
-    
+
     &__persom {
         margin: 0 33px 0 0;
     }
-    
+
     &__link__opacity:hover,
     &__link__opacity:focus {
         opacity: 0.7;
     }
-    
-    &__button-icon, 
+
+    &__button-icon,
     &__persom,
-    &__cart
-    {
+    &__cart {
         fill: $white-color;
     }
-    
+
     &__button:hover,
-    &__link__opacity:hover{
+    &__link__opacity:hover {
         fill: $dark-pink-color;
     }
 }
