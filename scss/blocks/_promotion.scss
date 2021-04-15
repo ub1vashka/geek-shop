@@ -1,0 +1,87 @@
+.promotions {
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 0 97px;
+
+        @include tablet {
+            margin: 0 0 155px;
+        }
+
+        @include mobile {
+            margin: 0 0 64px;
+        }
+
+    }
+
+    &__card {
+        width: 31%;
+        min-height: 260px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 30px;
+        flex-wrap: wrap;
+
+        @include tablet {
+            width: 31%;
+            min-height: 168px;
+            margin: 0 0 19px;
+        }
+
+        @include mobile {
+            width: 100%;
+            min-height: 247px;
+            margin: 0 0 32px;
+        }
+    }
+
+    &__card--woman {
+        background-image: url("../img/woman.jpg");
+        background-size: cover;
+
+    }
+
+    &__card--man {
+        background-image: url("../img/men-2.jpg");
+        background-size: cover;
+    }
+
+    &__card--kids {
+        background-image: url("../img/kids.jpg");
+        background-size: cover;
+    }
+
+    &__card--accesories {
+        background-image: url("../img/accesories.jpg");
+        background-size: cover;
+        width: 100%;
+
+        @include tablet {
+            min-height: 116px;
+        }
+    }
+
+    &__title__container {
+        text-transform: uppercase;
+        text-align: center;
+
+    }
+
+
+    &__title {
+        color: $white-color;
+
+        @include font(16px, 19px, 400);
+    }
+
+    &__text {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        color: $dark-pink-color;
+
+        @include font(24px, 29px, 700);
+    }
+}
