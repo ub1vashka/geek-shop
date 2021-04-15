@@ -1,4 +1,7 @@
 .footer {
+    max-width: 2000px;
+    margin: auto;
+
     &__container {
         display: flex;
         justify-content: space-between;
@@ -6,26 +9,51 @@
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        height: 448px;
+        min-height: 448px;
         align-items: center;
+
+        @include tablet {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+        }
         }
     
     &__container__quote {
         padding: 86px 230px 126px;
         text-align: center;
+
+        @include tablet {
+            padding: 0;
+        }
+
+        @include mobile {
+            padding: 0;
+        }
     }
     
     &__quote__img {
         margin: 86px 0 30px 225px;
+
+        @include tablet {
+            
+        }
+
+        @include mobile {
+
+        }
     }
     
     &__quote__text {
         width: 360px;
-        font-size: 20px;
         font-style: italic;
-        font-weight: 400;
-        line-height: 24px;
         margin: 0 0 0 230px;
+
+        @include font(20px, 24px, 400);
     }
     
     &__container__email {
@@ -36,31 +64,28 @@
     }
     
     &__email__title {
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 38px;
         text-align: center;
         text-transform: uppercase;
+
+        @include font(24px, 38px, 700);
     
     }
     
     &__email__sub-title {
         display: block;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 30px;
         text-transform: uppercase;
+
+        @include font(18px, 30px, 400);
     }
     
     &__email__description {
         background-color: $input-color;
         border-radius: 30px 0 0 30px;
         height: 49px;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 17px;  
         padding: 0 25px 0 25px;
         border: none;
+
+        @include font(14px, 17px, 400);
     }
     
     &__email__button {
@@ -68,21 +93,19 @@
         color: $grey-color;
         border: none;
         padding: 16px 8px 16px 10px;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 17px;
         text-align: center;
         text-decoration: none;
         display:inline-block;
         border-radius: 0 30px 30px 0;
-        
+
+        @include font(14px, 17px, 400);
     }
 
     &__email__box {
         margin: 27px 0 0 25px;
     }
     
-    &__social__container__color {
+    &__social-color {
         background-color: $black-color;
         
     }
@@ -94,12 +117,11 @@
         align-items: center;
     }
     
-    &__social__container__copy {
+    &__social-copy {
         width: 332px;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 19px;
         color: $grey-color;
+
+        @include font(16px, 19px, 400);
     }
     
     &__social__list {

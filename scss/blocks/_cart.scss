@@ -14,7 +14,7 @@
         line-height: 29px;
     }
 
-    &__title__container {
+    &__container-top {
         background-color: $registration-color;
         margin: 0 0 96px 0;
     }
@@ -95,5 +95,7 @@
             border-color: $dark-pink-color;
         }
     }
+
+    
 
 }
