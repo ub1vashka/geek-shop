@@ -96,6 +96,101 @@
         }
     }
 
-    
+    &__control {
+        display: flex;
+        
+        justify-content: space-between;
+    }
 
+    &__control__clear {
+        transform: translate(-50%, 0);
+        color: $outline-color;
+        border-color: $outline-color;
+        text-decoration: none;
+        user-select: none;
+        background-color: white;
+        padding: 14px 25px;
+        outline: 1px solid;
+        border: none;
+        text-transform: uppercase;
+        
+        
+
+        &:hover {
+            color: $dark-pink-color;
+            border-color: $dark-pink-color;
+        }
+    }
+
+    &__control__continue {
+    
+        transform: translate(-50%, 0);
+        color: $outline-color;
+        border-color: $outline-color;
+        text-decoration: none;
+        user-select: none;
+        background-color: white;
+        padding: 14px 25px;
+        outline: 1px solid;
+        border: none;
+        text-transform: uppercase;
+
+        &:hover {
+            color: $dark-pink-color;
+            border-color: $dark-pink-color;
+        }
+    }
+
+    &__checkout {
+        width: 360px;
+        height: 214px;
+        background-color: #F5F3F3;
+    }
+
+    &__checkout__button {
+        padding: 32px 0 0 0;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        color: $white-color;
+        border-color: $dark-pink-color;
+        text-decoration: none;
+        user-select: none;
+        background-color: $dark-pink-color;
+        padding: 16px 43px;
+        outline: 1px solid;
+        border: none;
+        text-transform: uppercase;
+    }
+
+    &__price {
+        text-align: right;
+        padding: 39px 34px 12px 0;
+
+        @include font(11px, 13px, 400);
+
+    }
+
+    &__price-total {
+        text-align: right;
+        text-transform: uppercase;
+        padding: 0 34px 21px 0;
+
+        @include font(16px, 19px, 700);
+    }
+
+    &__price-color {
+        color: $dark-pink-color;
+        margin: 0 0 0 20px;
+    }
+
+    &__price-space {
+        margin: 0 0 0 20px;
+    }
+
+    &__hr {
+        width: 250px;
+        color: #E2E2E2;
+        margin: 0 auto 32px;
+    }
 }

@@ -1,6 +1,10 @@
 .registration {
     margin: 0 0 113px 0;
 
+    @include mobile {
+        align-items: center;
+    }
+
     &__title__container {
         background-color: $registration-color;
         margin: 0 0 64px 0;
@@ -10,15 +14,22 @@
         padding: 59px 0 60px;
         color: #F16D7F;
         text-transform: uppercase;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 29px;
+
+        @include font(24px, 29px, 400);
+
+        @include mobile {
+            text-align: center;
+        }
     }
 
 
     &__main {
         display: flex;
 
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__placeholders {
@@ -27,10 +38,9 @@
     }
 
     &__placeholder-title {
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 19px;
         margin: 0 0 20px 0;
+
+        @include font(16px, 19px, 300);
     }
 
     &__placeholder__item {
@@ -42,17 +52,23 @@
         outline-color: $outline-color;
         padding: 0 0 0 16px;
         color: #B1B1B1;
-        font-size: 13px;
-        font-weight: 300;
-        line-height: 16px;
+
+        @include font(13px, 16px, 300);
+
+        @include tablet {
+            margin: 0 22px 20px 0;
+        }
+    
+        @include mobile {
+            margin: 20px 8px 20px 8px;
+            }
     }
 
     &__gender {
         display: flex;
         margin: 31px 0 33px 0;
-        font-size: 11px;
-        font-weight: 300;
-        line-height: 13px;
+
+        @include font(11px, 13px, 300);
     }
 
     &__gender__title {
@@ -60,27 +76,29 @@
     }
 
     &__placeholder__rules {
-        font-size: 13px;
-        font-weight: 300;
-        line-height: 16px;
         color: #B1B1B1;
         width: 359px;
         margin: 0 0 39px 0;
+
+        @include font(13px, 16px, 300);
     }
 
     &__button {
         background-color: $dark-pink-color;
         color: $grey-color;
         border: none;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 17px;
         text-decoration: none;
         display: inline-block;
         margin: 27px 0 0 0;
         width: 167px;
         height: 50px;
         text-transform: uppercase;
+
+        @include font(14px, 17px, 400);
+
+        @include mobile {
+            margin: 0 0 0 16px;
+        }
     }
 
     &__sub-title {
@@ -92,10 +110,32 @@
     &__loyalty__title {
         margin: 0 0 22px;
         text-transform: uppercase;
+
+        @include font(24px, 29px, 300);
+
+        @include tablet {
+            @include font(16px, 19px, 300);
+        }
+    
+        @include mobile {
+            @include font(16px, 19px, 300);
+            margin: 40px 0 32px 0;
+        }
     }
 
     &__loyalty__sub-title {
         margin: 0 0 21px;
+
+        @include font(24px, 29px, 300);
+
+        @include tablet {
+            @include font(16px, 19px, 300);
+        }
+    
+        @include mobile {
+            @include font(16px, 19px, 300);
+            margin: 40px 0 32px 0;
+        }
     }
 
     &__loyalty__item {
@@ -116,8 +156,15 @@
     &__loyalty__list {
         position: relative;
         margin: 0 0 0;
+
+        @include font(24px, 29px, 300);
+
+    @include tablet {
+        @include font(16px, 19px, 300);
     }
 
-
-
+    @include mobile {
+        @include font(16px, 19px, 300);
+    }
+    }
 }

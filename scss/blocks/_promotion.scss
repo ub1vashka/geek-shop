@@ -73,7 +73,7 @@
     &__title {
         color: $white-color;
 
-        @include font(16px, 19px, 400)
+        @include font(16px, 19px, 400);
     }
 
     &__text {
@@ -82,6 +82,6 @@
         line-height: 29px;
         color: $dark-pink-color;
 
-        @include font(24px, 29px, 700)
+        @include font(24px, 29px, 700);
     }
 }
