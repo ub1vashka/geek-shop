@@ -715,17 +715,31 @@ body {
 @media (max-width: 1600px) {
   .footer__container__quote {
     padding: 0;
+    margin: 64px auto;
   }
 }
 
 @media (max-width: 768px) {
   .footer__container__quote {
     padding: 0;
+    margin: 54px auto;
   }
 }
 
 .footer__quote__img {
   margin: 86px 0 30px 225px;
+}
+
+@media (max-width: 1600px) {
+  .footer__quote__img {
+    margin: 0 auto 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__quote__img {
+    margin: 0 auto 30px;
+  }
 }
 
 .footer__quote__text {
@@ -735,6 +749,18 @@ body {
   font-size: 20px;
   line-height: 24px;
   font-weight: 400;
+}
+
+@media (max-width: 1600px) {
+  .footer__quote__text {
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__quote__text {
+    margin: auto;
+  }
 }
 
 .footer__container__email {
@@ -747,6 +773,18 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 491px 0 0;
+}
+
+@media (max-width: 1600px) {
+  .footer__container__email {
+    margin: 48px auto 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__container__email {
+    margin: 59px auto 109px;
+  }
 }
 
 .footer__email__title {
@@ -805,24 +843,47 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   min-height: 79px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
+@media (max-width: 768px) {
+  .footer__social {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .footer__social-copy {
-  width: 332px;
+  max-width: 332px;
   color: #F8F8F8;
   font-size: 16px;
   line-height: 19px;
   font-weight: 400;
 }
 
+@media (max-width: 768px) {
+  .footer__social-copy {
+    margin: 0 0 9px 0;
+  }
+}
+
 .footer__social__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 43px 0 43px 0;
 }
 
 .footer__social__item {
