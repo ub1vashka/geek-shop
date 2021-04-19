@@ -23,7 +23,7 @@
         }
         }
     
-    &__container__quote {
+    &__container--quote {
         padding: 86px 230px 126px;
         text-align: center;
 
@@ -38,7 +38,7 @@
         }
     }
     
-    &__quote__img {
+    &__quote--img {
         margin: 86px 0 30px 225px;
 
         @include tablet {
@@ -50,7 +50,7 @@
         }
     }
     
-    &__quote__text {
+    &__quote--text {
         width: 360px;
         font-style: italic;
         margin: 0 0 0 230px;
@@ -66,7 +66,7 @@
         @include font(20px, 24px, 400);
     }
     
-    &__container__email {
+    &__container--email {
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -81,7 +81,7 @@
         }
     }
     
-    &__email__title {
+    &__email--title {
         text-align: center;
         text-transform: uppercase;
 
@@ -89,14 +89,14 @@
     
     }
     
-    &__email__sub-title {
+    &__email--sub-title {
         display: block;
         text-transform: uppercase;
 
         @include font(18px, 30px, 400);
     }
     
-    &__email__description {
+    &__email--description {
         background-color: $input-color;
         border-radius: 30px 0 0 30px;
         height: 49px;
@@ -106,7 +106,7 @@
         @include font(14px, 17px, 400);
     }
     
-    &__email__button {
+    &__email--button {
         background-color: $dark-pink-color;
         color: $grey-color;
         border: none;
@@ -119,7 +119,7 @@
         @include font(14px, 17px, 400);
     }
 
-    &__email__box {
+    &__email--box {
         margin: 27px 0 0 25px;
     }
     
@@ -153,13 +153,13 @@
         @include font(16px, 19px, 400);
     }
     
-    &__social__list {
+    &__social--list {
         display: flex;
         margin: 43px 0 43px 0;
         
     }
     
-    &__social__item {
+    &__social--item {
         background-color: white;
         width: 32px;
         height: 32px;
@@ -169,16 +169,16 @@
         }
     }
     
-    &__social__img {
+    &__social--img {
         padding: 8px 11px;
     
     }
     
-    &__img_imstagram {
+    &__img--imstagram {
         padding: 8px 0 0 9px;
     }
 
-    &__email__box {
+    &__email--box {
         display: flex;
     }
 }

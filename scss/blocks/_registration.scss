@@ -5,7 +5,7 @@
         align-items: center;
     }
 
-    &__title__container {
+    &__title--container {
         background-color: $registration-color;
         margin: 0 0 64px 0;
     }
@@ -43,7 +43,7 @@
         @include font(16px, 19px, 300);
     }
 
-    &__placeholder__item {
+    &__placeholder--item {
         width: 360px;
         height: 45px;
         margin: 0 128px 20px 0;
@@ -71,11 +71,11 @@
         @include font(11px, 13px, 300);
     }
 
-    &__gender__title {
+    &__gender--title {
         margin: 0 20px 0 10px;
     }
 
-    &__placeholder__rules {
+    &__placeholder--rules {
         color: #B1B1B1;
         width: 359px;
         margin: 0 0 39px 0;
@@ -107,7 +107,7 @@
         line-height: 29px;
     }
 
-    &__loyalty__title {
+    &__loyalty--title {
         margin: 0 0 22px;
         text-transform: uppercase;
 
@@ -123,7 +123,7 @@
         }
     }
 
-    &__loyalty__sub-title {
+    &__loyalty--sub-title {
         margin: 0 0 21px;
 
         @include font(24px, 29px, 300);
@@ -138,7 +138,7 @@
         }
     }
 
-    &__loyalty__item {
+    &__loyalty--item {
         margin: 0 0 16px;
         padding: 0 0 0 40px;
 
@@ -153,7 +153,7 @@
         margin: 0 0 0 20px;
     }
 
-    &__loyalty__list {
+    &__loyalty--list {
         position: relative;
         margin: 0 0 0;
 
