@@ -3,15 +3,24 @@
 
     &__container {
         display: flex;
+
+        @include tablet {
+            display: block;
+        }
+
+        @include mobile {
+            
+        }
     }
 
     &__title {
         padding: 59px 0 60px;
         color: #F16D7F;
         text-transform: uppercase;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 29px;
+
+        @include font(24px, 29px, 400);
+        @include mobile {
+            text-align: center;}
     }
 
     &__container-top {
@@ -28,42 +37,49 @@
         padding: 10px;
     }
 
-    &__item__sub-title{
+    &__item--sub-title{
         margin: 22px 0 42px 31px;
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 29px;
         width: 262px;
         text-transform: uppercase;
+
+        @include font(24px, 29px, 400);
     }
 
-    &__item__title {
+    &__item--title {
         margin: 0 0 6px 31px;
         font-family: Lato;
-        font-size: 22px;
-        font-weight: 400;
-        line-height: 26px;
+
+        @include font(22px, 26px, 400);
     }
 
-    &__sub-item__price {
+    &__sub-item--price {
         color: $dark-pink-color;
     }
 
-    &__adrees__title {
-        font-family: Lato;
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 19px;
-        text-transform: uppercase;
-        margin: 0 0 20px;
+    &__adrees {
+        @include tablet {
+        display: flex;
+        }
+
+        @include mobile {
+        
+        }
     }
 
-    &__adrees__form{
+    &__adrees--title {
+        font-family: Lato;
+        text-transform: uppercase;
+        margin: 0 0 20px;
+
+        @include font(16px, 19px, 300);
+    }
+
+    &__adrees--form{
         display: flex;
         flex-direction: column;
     }
 
-    &__adrees__placeholder{
+    &__adrees--placeholder{
         width: 360px;
         height: 45px;
         margin: 0 128px 20px 0;
@@ -72,12 +88,11 @@
         outline-color: $outline-color;
         padding: 0 0 0 16px;
         color: #B1B1B1;
-        font-size: 13px;
-        font-weight: 300;
-        line-height: 16px;
+
+        @include font(13px, 16px, 300);
     }
 
-    &__adrees__buttom {
+    &__adrees--buttom {
         margin: 24px 0 58px 70px;
         transform: translate(-50%, 0);
         color: $outline-color;
@@ -98,12 +113,18 @@
 
     &__control {
         display: flex;
-        
         justify-content: space-between;
+        @include tablet {
+            margin: 62px 49px 64px;
+            justify-content: center;
+        }
+
+        @include mobile {
+            
+        }
     }
 
-    &__control__clear {
-        transform: translate(-50%, 0);
+    &__control--clear {
         color: $outline-color;
         border-color: $outline-color;
         text-decoration: none;
@@ -122,9 +143,7 @@
         }
     }
 
-    &__control__continue {
-    
-        transform: translate(-50%, 0);
+    &__control--continue {
         color: $outline-color;
         border-color: $outline-color;
         text-decoration: none;
@@ -145,9 +164,17 @@
         width: 360px;
         height: 214px;
         background-color: #F5F3F3;
+
+        @include tablet {
+        margin: 30px;
+        }
+
+        @include mobile {
+            
+        }
     }
 
-    &__checkout__button {
+    &__checkout--button {
         padding: 32px 0 0 0;
         position: relative;
         left: 50%;
