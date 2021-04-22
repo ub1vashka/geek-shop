@@ -1295,8 +1295,6 @@ body {
 }
 
 .cart__control--clear {
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
   color: #A4A4A4;
   border-color: #A4A4A4;
   text-decoration: none;
@@ -1317,8 +1315,6 @@ body {
 }
 
 .cart__control--continue {
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
   color: #A4A4A4;
   border-color: #A4A4A4;
   text-decoration: none;

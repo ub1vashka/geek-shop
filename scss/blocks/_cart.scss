@@ -125,7 +125,6 @@
     }
 
     &__control--clear {
-        transform: translate(-50%, 0);
         color: $outline-color;
         border-color: $outline-color;
         text-decoration: none;
@@ -145,8 +144,6 @@
     }
 
     &__control--continue {
-    
-        transform: translate(-50%, 0);
         color: $outline-color;
         border-color: $outline-color;
         text-decoration: none;
